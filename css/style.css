@@ -21,7 +21,7 @@ li{
     --color-danger : #f75842;
     --color-danger2: #64180e;
     --color-white  : #ffffff;
-    --color-lite   : #999;
+    --color-lite   : #737373;
     --color-black  : #000;
     --color-bg     : #F8F6FE;
     --color-bg1    : #2e3267;
@@ -47,7 +47,7 @@ img{
     border-radius: 8px;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-   width: max-content;
+     width: max-content;
     text-transform: capitalize;
    
 }
@@ -89,7 +89,10 @@ h5{
     color: var(--color-black);
 }
 h3{
-    
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
 }
 body{
     background-color: #ffffff;
@@ -152,16 +155,17 @@ nav{
     position: relative;
 }
 
-.binner_image_wraper{
+.binner_image_wraper {
     width: 659PX;
     height: 730px;
     display: grid;
-        grid-template-rows: 229px 235px 205px;
-    grid-template-columns: 258px 229px 106px ;
+    grid-template-rows: 229px 235px 205px;
+    grid-template-columns: 258px 229px 106px;
     row-gap: 20px;
     column-gap: 32px;
     position: absolute;
-    right:-55px;
+    right: -55px;
+    top: -90px;
 }
 
 /*  ========================== Banner Right  Start  ============== */
@@ -261,11 +265,35 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.success_part2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 
 .success_part1 h5{
 width: 387px;
 margin-top: 15px;
 }
 
-
+.success_part2 span{
+color: #FFAC4A;
+}
+.success_part2 a{
+color: var(--color-primary);
+text-decoration: underline;
+}
+.success small{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-lite);
+    text-transform: capitalize;
+}
+.customer_small_image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
 /*  ========================== Success End  ============== */
