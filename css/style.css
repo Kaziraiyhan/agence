@@ -1,0 +1,230 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+:root{
+    --color-primary: #6a4df4;
+    --color-success: #00bf8e;
+    --color-warning: #f7c942;
+    --color-danger : #f75842;
+    --color-danger2: #64180e;
+    --color-white  : #ffffff;
+    --color-lite   : #999;
+    --color-black  : #000;
+    --color-bg     : #1f2641;
+    --color-bg2    : #2e3267;
+    --color-bg3    : #424890;
+
+    --contener-width-lg : 1280px;
+    --contener-width-md : 90%;
+    --contener-width-sm : 94%;
+    
+    --transition: all 400ms ease;
+}
+
+img{
+    object-fit: cover;
+}
+.btn{
+    background-color:var(--color-primary) ;
+    color: var(--color-white);
+    padding: 15px 42px;
+    line-height:26px ;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+   width: max-content;
+    text-transform: capitalize;
+   
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-primary);
+   
+}
+a{
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    color: var(--color-lite);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+h1{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    line-height: 95px;
+    color: var(--color-black);
+}
+body{
+    background-color: #ffffff;
+}
+section{
+    padding: 150px 0;
+}
+
+/* ================= Nav ber start========================== */
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+ width: 166px;
+ height: 42px;
+ margin: 57px 0;
+}
+.menu{
+    display: flex;
+    column-gap: 66px;
+    align-items: center;
+}
+.menu li a{
+    line-height: 26px;
+    font-size: 18px;
+    color: var(--color-lite);
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: var(--transition);
+}
+.menu li:hover a{
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+
+/*  banner part start ========================== */
+#banner{
+    
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.banner_btn{
+    margin-top: 30px;
+    display: block;
+}
+.banner_pera{
+    width: 604px;
+}
+.banner_right{
+    position: relative;
+}
+
+.binner_image_wraper{
+    width: 659PX;
+    height: 730px;
+    display: grid;
+        grid-template-rows: 229px 235px 205px;
+    grid-template-columns: 258px 229px 106px ;
+    row-gap: 20px;
+    column-gap: 32px;
+    position: absolute;
+    right:-55px;
+}
+
+/*  ========================== Banner Right  Start  ============== */
+.image1{
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+}
+.image_container1{
+    height: 122px;
+    width: 122px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #FFC44A;
+    overflow: hidden;
+}
+.image2{
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.image_container2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #5cbf00;
+    border-radius: 0px 130px 0 0; 
+}
+.image3{
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    position: relative;
+}
+.image_container3{
+    height: 103px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #a270f7;
+    border-radius: 0px 0px 130px 0px; 
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.image4{
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.image_container4{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 130px 0px 0px 0px; 
+    position: absolute;
+}
+.image5{
+    grid-row: 2/4;
+    grid-column: 2/-1;
+    position: relative;
+}
+.image_container5{
+    height: 374px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0033bf;
+    border-radius: 30px ; 
+    position: absolute;
+}
+.image6{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    position: relative;
+}
+.image_container6{
+    height: 100%;
+    width: 205px;
+    overflow: hidden;
+    background-color: #bf005f;
+    border-radius: 0px 0px 0px 130px; 
+    position: absolute;
+    right: 0;
+}
+/*  ========================== Banner Right  End  ============== */
