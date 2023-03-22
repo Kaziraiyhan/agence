@@ -1,5 +1,5 @@
 *{
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -23,9 +23,9 @@ li{
     --color-white  : #ffffff;
     --color-lite   : #999;
     --color-black  : #000;
-    --color-bg     : #1f2641;
-    --color-bg2    : #2e3267;
-    --color-bg3    : #424890;
+    --color-bg     : #F8F6FE;
+    --color-bg1    : #2e3267;
+    --color-bg2    : #424890;
 
     --contener-width-lg : 1280px;
     --contener-width-md : 90%;
@@ -74,6 +74,23 @@ h1{
     line-height: 95px;
     color: var(--color-black);
 }
+h6{
+    font-family: 'Inter', sans-serif;
+    color: var(--color-primary);
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 25px;
+}
+h5{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: var(--color-black);
+}
+h3{
+    
+}
 body{
     background-color: #ffffff;
 }
@@ -82,17 +99,22 @@ section{
 }
 
 /* ================= Nav ber start========================== */
+nav{
+    height: 106px;
+}
 
 .nav_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
+
 .logo{
  width: 166px;
  height: 42px;
- margin: 57px 0;
 }
+
 .menu{
     display: flex;
     column-gap: 66px;
@@ -113,13 +135,11 @@ section{
 
 
 /*  banner part start ========================== */
-#banner{
-    
-}
+
+
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 .banner_btn{
     margin-top: 30px;
@@ -228,3 +248,24 @@ section{
     right: 0;
 }
 /*  ========================== Banner Right  End  ============== */
+/*  ========================== Success Start  ============== */
+
+#success{
+    height: 300px;
+  
+}
+.success{
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    padding: 85px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.success_part1 h5{
+width: 387px;
+margin-top: 15px;
+}
+
+
+/*  ========================== Success End  ============== */
