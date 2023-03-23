@@ -24,7 +24,7 @@ li{
     --color-lite   : #737373;
     --color-black  : #000;
     --color-bg     : #F8F6FE;
-    --color-bg1    : #2e3267;
+    --color-bg1    : #f3f3f3;
     --color-bg2    : #424890;
 
     --contener-width-lg : 1280px;
@@ -36,6 +36,7 @@ li{
 
 img{
     object-fit: cover;
+    width: 100%;
 }
 .btn{
     background-color:var(--color-primary) ;
@@ -74,6 +75,14 @@ h1{
     line-height: 95px;
     color: var(--color-black);
 }
+h2{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    line-height: 55px;
+    color: var(--color-black);
+}
+
 h6{
     font-family: 'Inter', sans-serif;
     color: var(--color-primary);
@@ -98,9 +107,16 @@ body{
     background-color: #ffffff;
 }
 section{
-    padding: 150px 0;
+  padding-top:150PX ;
 }
-
+.center{
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+.center p{
+    margin-top: 20px;
+}
 /* ================= Nav ber start========================== */
 nav{
     height: 106px;
@@ -139,7 +155,9 @@ nav{
 
 /*  banner part start ========================== */
 
-
+#banner{
+    padding-bottom: 138px;
+}
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,16 +272,14 @@ nav{
 /*  ========================== Banner Right  End  ============== */
 /*  ========================== Success Start  ============== */
 
-#success{
-    height: 300px;
-  
-}
+
 .success{
     background-color: var(--color-bg);
     border-radius: 10px;
     padding: 85px 50px;
     display: flex;
     justify-content: space-between;
+    height: 300px;
 }
 .success_part2{
     display: flex;
@@ -291,9 +307,237 @@ text-decoration: underline;
     color: var(--color-lite);
     text-transform: capitalize;
 }
-.customer_small_image{
-    width: 35px;
-    height: 35px;
+.small_image_wraper{
+    position: relative;
+}
+.customer_small_image, .customer_small_image1, .customer_small_image2, .customer_small_image3, .customer_small_image4 ,.customer_small_image5{
+    width: 33px;
+    height: 33px;
     border-radius: 50%;
+    border: 2px solid var(--color-white);
+    overflow: hidden;
 }
 /*  ========================== Success End  ============== */
+.customer_small_image{
+    position: absolute;
+left: 0px;
+z-index: 1;
+}
+.customer_small_image1{
+    position: absolute;
+left: 20px;
+z-index: 2;
+}
+.customer_small_image2{
+    position: absolute;
+left: 40px;
+z-index: 3;
+}
+.customer_small_image3{
+    position: absolute;
+left: 60px;
+z-index: 4;
+}
+.customer_small_image4{
+    position: absolute;
+left: 80px;
+z-index: 5;
+}
+/* <!-- ========================start  Our Provided Services  Start===================== --> */
+
+.service_wraper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+
+.service_item {
+    text-align: center;
+    width: 424px;
+    height: 428px;
+    padding: 47px 49px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.service_item:hover{
+    box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.15);
+
+}
+.service_item img{
+    height: 80px;
+    width: 98px;
+}
+.service_item h3{
+    margin-top: 40px ;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+/* <!-- ======================== End  Our Provided Services  End ===================== --> */
+
+/* <!-- ======================== Our Recent Work ===================== --> */
+#work{
+    background-color: var(--color-bg1);
+}
+.work{
+    display: flex;
+    flex-direction: column;
+}
+.work_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.work_menu> li> a{
+    color: var(--color-lite);
+}
+.work_menu> li> a:hover{
+    color: var(--color-primary);
+}
+.work_wraper{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 24px;
+
+
+}
+.work_item{
+        width: 424px;
+    height: 457px;
+        background-color: var(--color-white);
+     border-radius: 15px;
+     overflow: hidden;
+}
+.work_item:hover{
+    box-shadow: 0 15px 15px 2px rgba(0, 0, 0, 0.13);
+}
+.work_item_image img{
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+}
+.work_item_image{
+    width: 424px;
+    height: 311px;
+    background-color: #00bf8e;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+   
+}
+.work_details{
+    padding: 30px 42px;
+    text-align: center;
+    
+}
+.work_details h4{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-black);
+    text-transform: capitalize;
+
+}
+.work_details p{
+    margin-top: 10px;
+}
+/* <!-- ======================== Our Recent Work ===================== --> */
+
+    /* <!-- ======================== Why You Should Choose Agenc ===================== --> */
+    
+    .choose_agenc{
+        display: grid;
+        grid-template-columns: 768px 1fr;
+        gap: 30px;
+    }
+    .choose_left> .center{
+        text-align: left;
+        margin-left: 0;
+    }
+    .choose_item_wraper{
+        display: flex;
+        flex-wrap: wrap;
+       margin-top: 85px;
+       row-gap: 40px;
+       column-gap: 80px;
+    }
+    .choose_left_item{
+        width: 344px;
+        height: 176px;
+
+    }
+        .choose_left_item img{
+        width: 57px;
+    }
+    .choose_left_item h3{
+       font-size: 25px;
+
+    }
+
+    /*  right side imge */
+    .choose_right{
+        position: relative;
+    }
+    .choose_right_img{
+        width: 565px;
+        height: 634px;
+        position: absolute;
+        gap: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+    
+    }
+        .choodr_r_top{
+        display: flex;
+        column-gap: 28px;
+     
+    }
+    .c_left_img1{
+        height: 349px;
+        width: 349px;
+        background-color: #0033bf;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .c_right_img2{
+        height: 188px;
+        width: 188px;
+        background-color: #13bf00;
+        align-self: flex-end;
+         border-radius: 0 120px 0 0;
+         overflow: hidden;
+    }
+
+    .choose_r_bottom{
+       display: flex;
+       column-gap: 35px;
+    }
+    .c_left_img3{
+        height: 257px;
+        width: 235px;
+        background-color: #6c00bf;
+        border-radius: 0 0 0 120px;
+        overflow: hidden;
+    }
+    .c_right_img4{
+        height: 205px;
+        width: 205px;
+        background-color: #bf9f00;
+        border-radius: 0 0 120px 0;
+        overflow: hidden;
+    }
+
+    /* <!-- ======================== Why You Should Choose Agenc ===================== --> */
+    /* <!-- ======================== Some Client Reviews ===================== --> */
+    #client_review{
+        margin-bottom: 300px;
+    }
+    /* <!-- ======================== Some Client Reviews ===================== --> */
+    
