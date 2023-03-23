@@ -539,5 +539,127 @@ z-index: 5;
     #client_review{
         margin-bottom: 300px;
     }
+        .review_slaider{
+            padding-top:50px ;
+            padding-bottom: 96px;
+        }
+ .slaider_item {
+    
+    margin-top: 290px;
+    margin-bottom: 20px;
+    width: 424px;
+    margin-left: 8px;
+    margin-right: 0px;
+    height: 422px;
+    padding: 54px 58.5px;
+    border-radius: 40px;
+
+    transition: var(--transition);
+    z-index: 5;
+}
+
+
+
+
+    .item_details img{
+        height: 40px;
+        width: 57px;
+        left: 0;
+    }
+    .item_details p{
+        margin-top: 20px;
+    }
+    .item_reviewer h6{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-black);
+    }
+    .item_details> span> svg{
+     color: #FFAC4A;
+     margin-top: 20px;
+     margin-right: 5px;
+    }
+.item_reviewer {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+    height: 72px;
+    width: 100%;
+    transition: var(--transition);
+}
+    .item_reviewer img{
+        height: 47px;
+        width: 47px;
+        border-radius: 50%;
+        vertical-align: middle;
+
+    }
+
+
+
+
+.slick-center .slaider_item{
+   
+    box-shadow: 2px 5px 50px -4px rgba(0, 0, 0, 0.308);
+    z-index: 100;
+}
+
+.slick-center {
+    margin-top: -240px;
+    transition: var(--transition);
+    z-index: 2;
+}
+.slick-center .item_reviewer span{
+    align-self: flex-end;
+}
+.slick-center .item_reviewer{
+    column-gap: 45px;
+}
+
+.slick-dots {
+
+    position: absolute;
+    bottom: 270px;
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    }
+.slick-dots button{
+    display: none;
+}
+.slick-dots li {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border:solid 1px var(--color-primary) ;
+
+}
+.slick-dots .slick-active{
+    background-color: var(--color-primary); 
+}
     /* <!-- ======================== Some Client Reviews ===================== --> */
+    /* <!-- ========================  We Do design, Code & Development Reviews  ===================== --> */
+    .development{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 110px;
+    }
+    .left_develop{
+        
+        grid-column: 1/6;
+    }
+    .left_develop .center{
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+    .right_develop{
+        grid-column: 7;
+        
+      
+    }
+    /* <!-- ========================  We Do design, Code & Development Reviews  ===================== --> */
     
