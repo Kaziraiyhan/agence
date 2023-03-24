@@ -117,6 +117,18 @@ section{
 .center p{
     margin-top: 20px;
 }
+.scrollup {
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    z-index: 100;
+    background: url(http://seenual.com/wp-content/uploads/2016/03/icon_top.png) no-repeat;
+}
 /* ================= Nav ber start========================== */
 nav{
     height: 106px;
@@ -247,12 +259,12 @@ nav{
     grid-column: 2/-1;
     position: relative;
 }
-.image_container5{
+.image_container5 {
     height: 374px;
-    width: 100%;
+    width: 374px;
     overflow: hidden;
     background-color: #0033bf;
-    border-radius: 30px ; 
+    border-radius: 30px;
     position: absolute;
 }
 .image6{
@@ -382,6 +394,7 @@ z-index: 5;
 /* <!-- ======================== Our Recent Work ===================== --> */
 #work{
     background-color: var(--color-bg1);
+    padding-bottom: 150px;
 }
 .work{
     display: flex;
@@ -537,7 +550,7 @@ z-index: 5;
     /* <!-- ======================== Why You Should Choose Agenc ===================== --> */
     /* <!-- ======================== Some Client Reviews ===================== --> */
     #client_review{
-        margin-bottom: 300px;
+        margin-bottom: 100px;
     }
         .review_slaider{
             padding-top:50px ;
@@ -642,24 +655,103 @@ z-index: 5;
 }
     /* <!-- ======================== Some Client Reviews ===================== --> */
     /* <!-- ========================  We Do design, Code & Development Reviews  ===================== --> */
+   #development{
+    background-color: var(--color-bg1);
+    padding-bottom: 150px;
+   }
     .development{
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        gap: 110px;
+        display: flex;
+        gap: 146px;
+        justify-content: center;
+        align-items: center;
     }
     .left_develop{
         
-        grid-column: 1/6;
+
     }
     .left_develop .center{
         text-align: left;
         margin-left: 0;
-        width: 100%;
+        width: 526px;
+ 
     }
     .right_develop{
-        grid-column: 7;
+        width: 536px;
+        background-color: var(--color-white);
+        padding: 61px 43px;
+        border-radius: 15px;
         
       
     }
+ 
+    form h5{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+ 
+    .right_develop  input{
+        width: 100%;
+        outline: none;
+        height: 64px;
+        border:solid 1px #E8E8E8;
+        border-radius: 10px;
+        padding-left: 23px;
+        margin:10px 0;
+    }
+    .right_develop label{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: 'Inter', sans-serif;
+    }
+    .right_develop ::placeholder{
+        color: #D0D0D0;
+    }
+    #submit{
+        background-color: var(--color-primary);
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
     /* <!-- ========================  We Do design, Code & Development Reviews  ===================== --> */
-    
+    footer{
+        padding-top:150px;
+    }
+    .footer_wraper{
+        display: flex;
+        column-gap: 131px;
+    }
+    .footer_detils p{
+        margin-top: 30px;
+    }
+    .footer_item a{
+        color: #7b7b7b;
+        width: max-content;
+        display: block;
+    }
+    .footer_item ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+        margin-top: 40px;
+    }
+    .cradit{
+        margin-bottom: 46px;
+        margin-top: 70px;
+        text-align: center;
+        position: relative;
+    }
+    .cradit p{
+        display: inline;
+    }
+    .cradit::after{
+        position: absolute;
+        background-color: #E8E8E8;
+        width: 1280px;
+        height: 1px;
+        content: '';
+        transform: translatex(-27%);
+        bottom: 40px;
+            }
