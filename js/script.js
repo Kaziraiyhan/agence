@@ -15,10 +15,16 @@ $(document).ready(function(){
 
 		// <!--Smooth Page Scroll to Top-->
 			$(window).scroll(function(){
+
 				if ($(this).scrollTop() > 100) {
 					$('.scrollup').fadeIn();
+					$("nav").addClass("nav_show").fadeIn()
 				} else {
 					$('.scrollup').fadeOut();
+					
+				}
+				if($(this).scrollTop() < 200){
+					$("nav").removeClass("nav_show")
 				}
 			}); 
 	 
@@ -26,16 +32,27 @@ $(document).ready(function(){
 				$("html, body").animate({ scrollTop: 0 }, 600);
 				return false;
 			});
+
+		
 		// <!--//-->
 
 
 
-		// form validation
 
-		  
-		  // Function to check if an email is valid
+		$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+			e.preventDefault();
+			var target = this.hash,
+				$target = $(target);
+		
+			$('html, body').stop().animate( {
+			  'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+			  window.location.hash = target;
+			} );
+		  } );
+		
 
-		//   form validation End
+
 
 // end ......
   });
@@ -79,3 +96,10 @@ $(document).ready(function(){
 	// If all fields are valid, return true
 	return false;
   }
+
+  // mixeit up
+		  
+  var containerEl = document.querySelector('.work_wraper');
+
+  var mixer = mixitup(containerEl);
+

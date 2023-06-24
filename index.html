@@ -18,15 +18,15 @@
         
     </div>
 
-    <nav>
+    <nav id="nav">
         <div class="container nav_container">
             <a class="logo" href="#index.html"> <img src="./images/logo.png" alt="Logo"></a>
             <ul class="menu">
-                <li> <a href="#">Home </a></li>
-                <li> <a href="#">about </a></li>
-                <li> <a href="#">service </a></li>
-                <li> <a href="#">Careeres </a></li>
-                <li> <a href="#">contact </a></li>
+                <li> <a href="#banner">Home </a></li>
+                <li> <a href="#work">about </a></li>
+                <li> <a href="#service">service </a></li>
+                <li> <a href="#choose_agenc">Careeres </a></li>
+                <li> <a href="#footer">contact </a></li>
             </ul>
             <a href="#contact" class="contact btn"> Contact</a>
 
@@ -138,43 +138,62 @@
             <div class="service_wraper">
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
+                    <div class="service_image">
+                        <img src="images/web design.png" alt="">
+                    </div>
+                   
                     <h3>Web Design</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
-                    <h3>Web Design</h3>
+                        <div class="service_image">
+
+                            <img src="images/services 2.png" alt="">
+                        </div>
+                    <h3>UI/UX Design</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
-                    <h3>Web Design</h3>
+                    <div class="service_image">
+
+                        <img src="images/services 3.png" alt="">
+                    </div>
+                    <h3>Web Development</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
-                    <h3>Web Design</h3>
+                    <div class="service_image">
+
+                        <img src="images/services 4.png" alt="">
+                    </div>
+                    <h3>Motion Graphics</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
-                    <h3>Web Design</h3>
+                    <div class="service_image">
+
+                        <img src="images/service-5.png" alt="">
+                    </div>
+                    <h3>3D Animation</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
 
                 <div class="service_item">
-                    <img src="images/web design.png" alt="">
-                    <h3>Web Design</h3>
+                    <div class="service_image">
+
+                        
+                        <img src="images/services 6.png" alt="">
+                    </div>
+                    <h3>Digital Marketing</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but themajority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look.</p>
                 </div>
@@ -198,18 +217,20 @@
                     alteration in some form.
                 </p>
             </div>
-            <ul class="work_menu">
-                <li><a href="#"> all</a></li>
-                <li><a href="#"> mobile</a></li>
-                <li><a href="#"> design</a></li>
-                <li><a href="#"> Branding</a></li>
-                <li><a href="#"> illustration</a></li>
-                <li><a href="#"> Digital Marketing</a></li>
+            <ul class="work_menu controls">
+                <li class="control" data-filter="all">All</li>
+                <li class="control" data-filter=".mobile">mobile</li>
+                <li class="control" data-filter=".design">design</li>
+                <li class="control" data-filter=".branding">Branding</li>
+                <li class="control" data-filter=".illustration">illustration</li>
+                <li class="control" data-filter=".marketing">Digital Marketing</li>
+
             </ul>
+  
 
             <div class="work_wraper">
 
-                <div class="work_item">
+                <div class="work_item mix mobile">
                     <div class="work_item_image">
                         <img src="images/work_image_1.jpg" alt="">
                     </div>
@@ -219,52 +240,52 @@
                     </div>
                 </div>
 
-                <div class="work_item">
+                <div class="mix work_item design">
                     <div class="work_item_image">
-                        <img src="images/work_image_1.jpg" alt="">
+                        <img src="images/work_image_2.jpg" alt="">
                     </div>
                     <div class="work_details">
-                        <h4>task Management app</h4>
+                        <h4>Digital Marketing</h4>
+                        <p> This is a task management application that can help you be more </p>
+                    </div>
+                </div>
+
+                <div class="mix work_item branding">
+                    <div class="work_item_image">
+                        <img src="images/work_image-3.png" alt="">
+                    </div>
+                    <div class="work_details">
+                        <h4>App Design</h4>
                         <p> this is a task menagement aplication that can help you be more</p>
                     </div>
                 </div>
 
-                <div class="work_item">
+                <div class="mix work_item illustration">
                     <div class="work_item_image">
-                        <img src="images/work_image_1.jpg" alt="">
+                        <img src="images/work_image-4.png" alt="">
                     </div>
                     <div class="work_details">
-                        <h4>task Management app</h4>
+                        <h4>Landing Page Design</h4>
+                        <p> This is a task management application that can help you be more </p>
+                    </div>
+                </div>
+
+                <div class="mix work_item ">
+                    <div class="work_item_image">
+                        <img src="images/work_image-5.png" alt="">
+                    </div>
+                    <div class="work_details">
+                        <h4>Dashboard Design</h4>
                         <p> this is a task menagement aplication that can help you be more</p>
                     </div>
                 </div>
 
-                <div class="work_item">
+                <div class="mix work_item marketing">
                     <div class="work_item_image">
-                        <img src="images/work_image_1.jpg" alt="">
+                        <img src="images/work_image-6.png" alt="">
                     </div>
                     <div class="work_details">
-                        <h4>task Management app</h4>
-                        <p> this is a task menagement aplication that can help you be more</p>
-                    </div>
-                </div>
-
-                <div class="work_item">
-                    <div class="work_item_image">
-                        <img src="images/work_image_1.jpg" alt="">
-                    </div>
-                    <div class="work_details">
-                        <h4>task Management app</h4>
-                        <p> this is a task menagement aplication that can help you be more</p>
-                    </div>
-                </div>
-
-                <div class="work_item">
-                    <div class="work_item_image">
-                        <img src="images/work_image_1.jpg" alt="">
-                    </div>
-                    <div class="work_details">
-                        <h4>task Management app</h4>
+                        <h4>Web App Design</h4>
                         <p> this is a task menagement aplication that can help you be more</p>
                     </div>
                 </div>
@@ -296,15 +317,15 @@
                     </div>
 
                     <div class="choose_left_item">
-                        <img src="images/chose_icon1.png" alt="">
-                        <h3>Innovative Ideas</h3>
-                        <p>Because each project is different, we adapt to your business model.</p>
+                        <img src="images/chose_icon2.png" alt="">
+                        <h3>Dedicated Support</h3>
+                        <p>We provide 24/7 support for all our clients and serve them professionally.</p>
                     </div>
 
                     <div class="choose_left_item">
-                        <img src="images/chose_icon1.png" alt="">
-                        <h3>Innovative Ideas</h3>
-                        <p>Because each project is different, we adapt to your business model.</p>
+                        <img src="images/chose_icon3.png" alt="">
+                        <h3>Honest Pricing</h3>
+                        <p>Pricing on projects are based on various analyzes and are cost effective.</p>
                     </div>
 
                 </div>
@@ -315,13 +336,19 @@
                 <div class="choose_right_img">
 
                     <div class="choodr_r_top">
-                        <div class="c_left_img1"></div>
+                        <div class="c_left_img1">
+                            <img src="./images/Chose agenc-1.png" alt="">
+                        </div>
                         <div class="c_right_img2"></div>
                     </div>
 
                     <div class="choose_r_bottom">
-                        <div class="c_left_img3"></div>
-                        <div class="c_right_img4"></div>
+                        <div class="c_left_img3">
+                     
+                        </div>
+                        <div class="c_right_img4">
+                            <img src="images/Chose agenc-2.png" alt="">
+                        </div>
                     </div>
 
                 </div>
@@ -337,11 +364,10 @@
         <div class="container client_review">
             <div class="center">
                 <h2>
-                    Our Recent Work
+                    Some Client Reviews
                 </h2>
                 <p>
-                    There are many variations of passages of Lorem Ipsum available, but themajority have suffered
-                    alteration in some form.
+                    There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form.
                 </p>
             </div>
 
@@ -391,10 +417,10 @@
                             </span>
                         </div>
                         <div class="item_reviewer">
-                            <img src="images/protrate/2.jpg" alt="">
+                            <img src="images/protrate/5.jpg" alt="">
                             <span>
-                                <h6>Awlad Hossain</h6>
-                                <p>UX Researcher</p>
+                                <h6>Eric Drake</h6>
+                                <p>Digital Marketor</p>
                             </span>
                         </div>
                     </div>
@@ -418,10 +444,10 @@
                             </span>
                         </div>
                         <div class="item_reviewer">
-                            <img src="images/protrate/2.jpg" alt="">
+                            <img src="images/protrate/6.jpg" alt="">
                             <span>
-                                <h6>Awlad Hossain</h6>
-                                <p>UX Researcher</p>
+                                <h6>Rosa Farmer</h6>
+                                <p>UI Designer</p>
                             </span>
                         </div>
                     </div>
@@ -445,9 +471,9 @@
                             </span>
                         </div>
                         <div class="item_reviewer">
-                            <img src="images/protrate/2.jpg" alt="">
+                            <img src="images/protrate/7.jpg" alt="">
                             <span>
-                                <h6>Awlad Hossain</h6>
+                                <h6>Belayet Hossain</h6>
                                 <p>UX Researcher</p>
                             </span>
                         </div>
@@ -465,7 +491,7 @@
             <div class="left_develop">
                 <div class="center">
                     <h2>
-                        Our Recent Work
+                        We Do design, Code & Development
                     </h2>
                     <p>
                         I had a good experience while using this app, what fascinated me was the live tracking feature
@@ -501,7 +527,7 @@
     </section>
     <!-- ========================  We Do design, Code & Development Reviews  ===================== -->
     <!-- ========================  Footer  ===================== -->
-    <footer>
+    <footer id="footer">
         <div class="container footer">
             <div class="footer_wraper">
 
@@ -564,6 +590,7 @@
         integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 
     <script src="js/slick.js"></script>
+    <script src="js/mixitup.js"></script>
     <script src="js/script.js"></script>
 
 
